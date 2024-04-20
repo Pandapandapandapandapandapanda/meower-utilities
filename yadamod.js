@@ -71,7 +71,7 @@ function sendMessage(message, channel) {
       'Token': token
     },
     body: JSON.stringify({
-      content: message
+      content: message.toString()
     })
   })
   .then(response => {
@@ -101,7 +101,7 @@ class MeowerUtils {
     return {
       id: 'meowerutils',
       name: 'Meower Utilities',
-      color1: '#FFC0CB',
+      color1: '#FFA500',
       color2: '#FFFFFF',
       blocks: [
         {
